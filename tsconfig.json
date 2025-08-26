@@ -10,7 +10,14 @@
     "outDir": "dist",
     "verbatimModuleSyntax": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*" : ["./src/*"]
+    }
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]

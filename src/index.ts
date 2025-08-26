@@ -1,8 +1,5 @@
 import { serve } from '@hono/node-server'
-import { Hono } from 'hono'
-
-const app = new Hono()
-app.get('/', (c) => c.text('Hello Node.js!'))
+import app from '~/app'
 
 const server = serve({
   fetch: app.fetch,
