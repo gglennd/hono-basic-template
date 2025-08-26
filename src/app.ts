@@ -1,6 +1,7 @@
-import { Hono } from 'hono'
+import { mainFactory } from '~/factory'
 
-const app = new Hono()
+const app = mainFactory.createApp()
+
 app.get('/', (c) => c.text('Hello Node.js!'))
 
 export default app
