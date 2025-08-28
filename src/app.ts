@@ -1,7 +1,7 @@
-import { mainFactory } from '~/factory'
+import { mainFactory } from "~/factory";
 
-const app = mainFactory.createApp()
+const app = mainFactory.createApp();
 
-app.get('/', (c) => c.text('Hello Node.js!'))
+app.get("/", c => c.text("Hello Node.js!"));
 
-export default app
+export default app;

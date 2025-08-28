@@ -1,21 +1,25 @@
 {
   "name": "@gglennd/hono-basic-template",
-  "version": "1.0.0",
   "type": "module",
+  "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@10.6.5",
   "scripts": {
     "dev": "tsx --env-file=.env --watch ./src/index.ts",
     "build": "tsc -b && tsc-alias",
     "type-check": "tsc --noEmit",
+    "lint": "eslint .",
     "start": "node --env-file=.env dist/index.js"
   },
-  "packageManager": "pnpm@10.6.5",
   "dependencies": {
     "@hono/node-server": "^1.19.0",
     "hono": "^4.9.4"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^5.2.1",
     "@types/node": "^24.3.0",
+    "eslint": "^9.33.0",
+    "eslint-plugin-format": "^1.0.1",
     "tsc-alias": "^1.8.16",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
