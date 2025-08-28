@@ -16,7 +16,6 @@ export const logger = createMiddleware(async (c, next) => {
           colorize: true,
           translateTime: "SYS:standard",
           ignore: "pid,hostname",
-
         })),
   })(c, next);
 });

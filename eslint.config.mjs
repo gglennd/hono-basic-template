@@ -11,7 +11,6 @@ export default antfu({
   },
   rules: {
     "ts/consistent-type-definitions": ["off"],
-    "node/prefer-global/process": ["off"],
     "no-console": ["warn"],
     "perfectionist/sort-imports": ["error", {
       tsconfigRootDir: ".",

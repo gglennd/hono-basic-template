@@ -4,9 +4,7 @@ import { createFactory } from "hono/factory";
 
 import type { AppBindings } from "~/types";
 
-import { logger } from "~/logger";
-
-export const mainFactory = createFactory<{
+export const factory = createFactory<{
   Bindings: AppBindings;
   Variables: {
     logger: PinoLogger;
@@ -14,8 +12,5 @@ export const mainFactory = createFactory<{
 }>({
   defaultAppOptions: {
     strict: false,
-  },
-  initApp: (app) => {
-    app.use(logger);
   },
 });
